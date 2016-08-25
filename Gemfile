@@ -8,19 +8,20 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-group :development, :test do
-  gem 'byebug'
-  gem 'bootstrap-sass'
-  gem 'sqlite3'  
-  gem 'web-console', '~> 2.0'  
-end
+gem 'bootstrap-sass', github 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
+
+group :development, :test do
+  gem 'sqlite3' 
+end
 
 group :production do
      gem 'pg'
      gem 'rails_12factor'
 end
 
+group :doc do
+gem 'sdoc', require false
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+end
+
