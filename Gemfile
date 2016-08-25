@@ -13,6 +13,7 @@ group :development, :test do
   gem 'byebug'
   gem 'bootstrap-sass'
   gem 'sqlite3'  
+  gem 'web-console', '~> 2.0'  
 end
 
 
@@ -21,9 +22,8 @@ group :production do
      gem 'rails_12factor'
 end
 
-group :development do
 
-  gem 'web-console', '~> 2.0'
+
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
