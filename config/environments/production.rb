@@ -79,6 +79,6 @@ Rails.application.configure do
 
   # Required for Heroku sc
   #note to set this to your actual host e.g. 'sampinteresting.com'
-  config.action_mailer.default_url_options = { host: http://sampinteresting.herokuapp.com }
+  config.action_mailer.default_url_options = { host: https://git.heroku.com/sampinteresting.git }
   
 end
