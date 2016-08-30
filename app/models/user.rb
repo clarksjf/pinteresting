@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   validates :password, :presence => true,
                      :on => :create,
-                     :format => {:with => /\A.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\Z/ }
+                     :format => {:with => /\A.*(?=.{7,})(?=.*\d).*\Z/ }
 #Password restrictions explanations:
 #First, we match for at least 10 characters:
 #(?=.{10,})
